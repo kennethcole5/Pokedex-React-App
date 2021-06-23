@@ -4623,8 +4623,8 @@ const pokedexDataObject =
 };
 export default pokedexDataObject;
 
-export const getPokemonbyId = (Id) => {
-    return pokedexDataObject.pokemon.find(pokemon => pokemon.Id = id)
+export const getPokemonbyId = (id) => {
+    return pokedexDataObject.pokemon.find(pokemon => pokemon.num == id);
 }
 
 export const getAllPokemon = () => {
